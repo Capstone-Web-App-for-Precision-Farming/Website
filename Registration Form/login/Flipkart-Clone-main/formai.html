@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main" class="container">
+        <div class="row">
+           <div class="col-xs-12 col-lg-offset-3 col-lg-6">
+              <div class="m-b-md text-center">
+                 <h1 id="title">What are you looking for?</h1>
+                 <p id="description" class="description" class="text-center">Start conversation by entering details</p>
+              </div>
+              <form method="GET" action="" id="survey-form" name="survey-form">
+                 <fieldset>
+                    <label for="name" id="name-label">
+                    Name 
+                    <input class="" type="text" id="name" name="name" placeholder="Enter your name (required)" required />
+                    </label>
+                 </fieldset>
+                 <fieldset>
+                    <label for="email" id="email-label">
+                    Email 
+                    <input class="" type="email" id="email" name="email" placeholder="Enter your email (required)" required />
+                    </label>
+                 </fieldset>
+                 <fieldset>
+                    <label for="number" id="number-label">
+                    Age 
+                    <input class="" type="number" id="number" name="number" min="8" max="112" placeholder="Enter you age (required)" required />
+                    </label>
+                 </fieldset>
+                                             
+                 <fieldset>
+                    <label for="survey-form-suggestions">
+                    Start a conversation by describing what you want
+                    <textarea id="survey-form-suggestions" maxlength="194"></textarea>
+                    </label>
+                 </fieldset>
+                                             
+                 <fieldset>
+                    <div class="labels">
+                       Modification yu would like to focus on
+                    </div>
+                    <label for="survey-form-improve1" class="m-b-xs">
+                    <input type="checkbox" id="survey-form-improve1" value="feProjects">
+                    Sleeve length
+                    </label>
+                    <label for="survey-form-improve2" class="m-b-xs">
+                    <input type="checkbox" id="survey-form-improve2" value="beProjects">
+                    Fit
+                    </label>
+                    <label for="survey-form-improve3" class="m-b-xs">
+                    <input type="checkbox" id="survey-form-improve3" value="dataVisualization">
+                    Neckline
+                    </label>
+                    
+                 </fieldset>
+                 <fieldset>
+                    <label for="dropdown">
+                       Which option best describes your clothing preference? *
+                       <select id="dropdown" name="dropdown" class="m-t-xs">
+                          <option value="student" selected>Casual</option>
+                          <option value="ftLob">Party Wear</option>
+                          <option value="ftLearner">Athletic Wear</option>
+                          <option value="notSaying">Formal Wear</option>
+                          <option value="other">Other</option>
+                       </select>
+                    </label>
+                 </fieldset>
+                 <fieldset>
+                    <div class="labels">
+                       What should be the sleeves length?
+                    </div>
+                    <label class="m-b-xs">
+                    <input type="radio" name="survey-form-gender" value="definitely" checked /> 3/4
+                    </label>
+                    <label class="m-b-xs">
+                    <input type="radio" name="survey-form-gender" value="maybe" /> long
+                    </label>
+                    <label class="m-b-xs">
+                    <input type="radio" name="survey-form-gender" value="notSure" /> short
+                    </label>
+                                                         <label class="m-b-xs">
+                    <input type="radio" name="survey-form-gender" value="maybe" /> sleeveless
+                    </label>
+                 </fieldset>
+                 <fieldset>
+                    <label for="survey-form-like">
+                       What do you want to add or remove?
+                       <select id="survey-form-like" name="survey-form-like" class="m-t-xs">
+                          <option value="challenges" selected>Stripes-add</option>
+                          <option value="projects">stripes-remove</option>
+                          <option value="community">floral-add</option>
+                          <option value="openSource">floral-remove</option>
+                       </select>
+                    </label>
+                 </fieldset>
+                 <button id="submit" type="submit" class="btn">Submit the form</button>
+              </form>
+              
+              </div>
+           </div>
+        </div>
+     </main>
+</body>
+</html>
